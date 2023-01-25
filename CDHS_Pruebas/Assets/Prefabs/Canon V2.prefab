@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821697247940286972}
-  m_LocalRotation: {x: 0.49999997, y: -0.49999997, z: -0.50000006, w: 0.5000001}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 9.8499775, y: 0.5599998, z: -6.9292245}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
@@ -48,11 +48,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149a5d35b210fe649a0e3909b87cde6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scriptBullet: {fileID: 0}
+  scriptBullet: {fileID: 5453846555968563736}
   bulletObject: {fileID: 4958846322245468681, guid: fb2627e52ae0d6d428a7d966b8cee094,
     type: 3}
   spawnBulletFromCanon: {fileID: 821697247940286973}
-  activateScript: 1
+  activateScript: 0
   canShoot: 0
   totalTime: 0
 --- !u!1 &821697248012198539
@@ -443,3 +443,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5874541620540156423}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5453846555968563736 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1885148929666138143, guid: fb2627e52ae0d6d428a7d966b8cee094,
+    type: 3}
+  m_PrefabInstance: {fileID: 5874541620540156423}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf0496b1352c8b944aa9ef8f1518488b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
