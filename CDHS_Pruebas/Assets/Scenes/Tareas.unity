@@ -720,7 +720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cf4e528c3b95bd4286882306b38fc3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeScript: 1
+  activeScript: 0
   cameraList:
   - {fileID: 1294214295}
   - {fileID: 1963410632}
@@ -1014,6 +1014,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1623992198, guid: 8b62b8e64102dcc45913ea1fdf7619b1, type: 3}
+      propertyPath: actionMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 105961080392294964, guid: 8b62b8e64102dcc45913ea1fdf7619b1,
         type: 3}
       propertyPath: m_RootOrder
@@ -1562,8 +1566,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182010251}
-  m_LocalRotation: {x: 0.048439767, y: -0.04943586, z: 0.0024741394, w: 0.9975989}
-  m_LocalPosition: {x: 12.307591, y: 2.7553372, z: -3.145629}
+  m_LocalRotation: {x: 0.44869298, y: 0.0013631087, z: -0.0005873989, w: 0.8936848}
+  m_LocalPosition: {x: 11.170929, y: 12.345241, z: -6.8720803}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

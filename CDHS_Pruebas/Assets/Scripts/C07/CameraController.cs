@@ -16,6 +16,11 @@ public class CameraController : MonoBehaviour
         {
             cameraFocus = true;
         }
+        else
+        {
+            cameraList[0].gameObject.SetActive(false);
+            cameraList[1].gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame
