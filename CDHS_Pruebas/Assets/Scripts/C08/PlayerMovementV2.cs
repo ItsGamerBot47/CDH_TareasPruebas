@@ -6,10 +6,14 @@ public class PlayerMovementV2 : MonoBehaviour
 {
     [SerializeField] private bool activateScript = true;
     [SerializeField] private float speedPlayer = 1.2f;
+    [SerializeField] private float rotationSpeed = 1.5f;
 
     void MovePlayer(Vector3 direction)
     {
         transform.Translate(direction * (speedPlayer * Time.deltaTime));
+        //  Mientras se mueva
+        Quaternion toRotation = Quaternion.LookRotation(direction, Vector3.up);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
     }
     void KeyboardMovement()
     {

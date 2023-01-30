@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
+    [SerializeField] private Transform playerToFollow;
+    [SerializeField] private float speedRotation = 15.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,7 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Quaternion rotateTo = Quaternion.LookRotation(playerToFollow.position - transform.position);
+        transform.rotation = Quaternion.Lerp(transform.rotation, rotateTo, speedRotation * Time.deltaTime);
     }
 }
