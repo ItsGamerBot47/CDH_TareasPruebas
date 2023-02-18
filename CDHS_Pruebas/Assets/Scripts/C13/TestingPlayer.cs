@@ -42,8 +42,7 @@ public class TestingPlayer : MonoBehaviour
     void RotatePlayer(Vector3 directionToLook)
     {
         Quaternion newRotation = Quaternion.LookRotation(directionToLook);
-        transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, rotationSpeed * Time.deltaTime);
-    }
+        transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, rotationSpeed * Time.deltaTime);    }
 
     private void OnCollisionEnter(Collision other)
     {
